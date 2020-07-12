@@ -1,6 +1,7 @@
 package com.project.toy.common.utils.mybatis;
 
 import com.project.toy.common.enums.DataStatus;
+import com.project.toy.common.enums.UserStatus;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.type.BaseTypeHandler;
 import org.apache.ibatis.type.JdbcType;
@@ -19,7 +20,7 @@ import java.sql.SQLException;
  * Date: 2020/07/05
  */
 @MappedTypes({
-        DataStatus.class
+        DataStatus.class, UserStatus.class
 })
 @Slf4j
 public class IntEnumTypeHandler<E extends Enum<E>> extends BaseTypeHandler<E> {
