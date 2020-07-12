@@ -17,7 +17,7 @@ public class ApiAccountModel implements Serializable {
 
     private String clientId;        // API 인증 아이디
     private String secretKey;       // API 인증 키
-    private DataStatus dataStatus;  // 데이터 상태
+    private int dataStatus;         // 데이터 상태
     private String regDatetime;     // 등록일
     private String updDatetime;     // 수정일
 }
